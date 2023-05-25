@@ -17,13 +17,6 @@ let songs = [
     {songName: "Friends", filePath: "songs/5.mp3", coverPath: "f.webp"},
 ]
 
-let background =[
-    {coverPath: "rc.jpg"},
-    {coverPath: "2.jpg"},
-    {coverPath: "p3.jpg"},
-    {coverPath: "ep.jpg"},
-    {coverPath: "f.webp"}
-]
 
 songItems.forEach((element, i)=>{ 
     element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
@@ -39,7 +32,7 @@ masterPlay.addEventListener('click', ()=>{
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
         gif.style.opacity = 1;
-        document.body.style.backgroundImage = background[1];
+       
     }
     else{
         audioElement.pause();
