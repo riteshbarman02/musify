@@ -8,7 +8,7 @@ body{
   position: relative;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(135, 15, 15) 50%, rgba(2,0,36,1) 100%);
-  background-image: url('background.jpg');
+  background-image: url('background2.jpg');
 }
 
 nav{
@@ -56,12 +56,13 @@ img{
   position: absolute;
   color: #efb2e7;
   top: 200px;
-  left: 550px;
+  left: 10px;
+  font: italic;
   font-size: 45px;
-  color: #d087ba;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
   letter-spacing: 0.06em;
-  font-family: fantasy;
-  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .content{
   position: absolute;
